@@ -1,14 +1,19 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Dev Gandhi - Portfolio</title>
 
   <link rel="stylesheet" href="styles.css?v=3">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 </head>
 
 <body>
@@ -19,35 +24,53 @@
   <nav>
     <div class="nav-container">
 
-      <a href="index.html" class="logo">Dev Gandhi</a>
+      <a href="index.html" class="logo">
+        Dev Gandhi
+      </a>
 
-      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      <button
+        class="mobile-menu-btn"
+        onclick="toggleMenu()"
+      >
+        ☰
+      </button>
 
       <ul class="nav-links" id="navLinks">
+
         <li>
-          <a href="index.html" class="active">Home</a>
+          <a href="index.html" class="active">
+            Home
+          </a>
         </li>
 
         <li>
-          <a href="research.html">Publications</a>
+          <a href="research.html">
+            Publications
+          </a>
         </li>
 
         <li>
-          <a href="projects.html">Projects</a>
+          <a href="projects.html">
+            Projects
+          </a>
         </li>
 
         <li>
-          <a href="presentations.html">Talks</a>
+          <a href="presentations.html">
+            Talks
+          </a>
         </li>
+
       </ul>
 
     </div>
   </nav>
 
 
+  <!-- Main Content -->
   <main class="container">
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
 
       <img
@@ -56,7 +79,9 @@
         class="hero-image"
       >
 
-      <h1>Dev Tejas Gandhi</h1>
+      <h1>
+        Dev Tejas Gandhi
+      </h1>
 
       <div class="subtitle">
         Ph.D. Student · IISc Bangalore
@@ -71,6 +96,28 @@
         System Security Lab
       </a>
 
+
+      <!-- About Me -->
+      <div class="about">
+
+        <div class="about-label">
+          ABOUT ME
+        </div>
+
+        <p>
+          I am a Ph.D. student at the Indian Institute of Science (IISc),
+          working in <strong>System Security</strong>. My research interests
+          focus on <strong>robotics and cyber-physical system security</strong>,
+          with a particular interest in securing robotic systems. I am also
+          interested in <strong>confidential computing, parallel computing,
+          and compilers</strong>, and enjoy exploring how systems can be
+          designed to be both secure and efficient.
+        </p>
+
+      </div>
+
+
+      <!-- Social Links -->
       <div class="social-links">
 
         <a
@@ -110,34 +157,19 @@
 
     </section>
 
-
-    <!-- About Me -->
-    <section class="about">
-
-      <div class="about-label">
-        ABOUT ME
-      </div>
-
-      <p>
-        I am a Ph.D. student at the Indian Institute of Science (IISc),
-        working in <strong>System Security</strong>. My research interests
-        focus on <strong>robotics and cyber-physical system security</strong>,
-        with a particular interest in securing robotic systems. I am also
-        interested in <strong>confidential computing, parallel computing,
-        and compilers</strong>, and enjoy exploring how systems can be
-        designed to be both secure and efficient.
-      </p>
-
-    </section>
-
   </main>
 
 
   <script>
     function toggleMenu() {
-      document.getElementById('navLinks').classList.toggle('active');
+      document
+        .getElementById('navLinks')
+        .classList
+        .toggle('active');
     }
   </script>
 
 </body>
+
 </html>
+```
