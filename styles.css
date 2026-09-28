@@ -411,55 +411,87 @@ nav {
   background: #3a8eef;
 }
 
-
 /* =========================
    About Me
    ========================= */
 
 .about {
-  max-width: 780px;
-  margin: 10px auto 80px;
-  padding: 32px 36px;
-  border-left: 3px solid rgba(100, 100, 100, 0.25);
+  width: 100%;
+  max-width: 760px;
+  margin: 2rem auto 0;
+  padding: 0;
+  text-align: center;
 }
 
 .about-label {
+  margin-bottom: 1rem;
+
   font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  margin-bottom: 14px;
-  opacity: 0.55;
+  font-weight: 400;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: var(--text);
+  opacity: 0.65;
 }
 
 .about p {
-  margin: 0;
-  font-size: 1rem;
+  margin: 0 auto;
+
+  color: var(--text-secondary);
+
+  font-size: 0.98rem;
+  font-weight: 300;
   line-height: 1.8;
-  font-weight: 400;
-  opacity: 0.82;
+
+  letter-spacing: 0.2px;
 }
 
 .about strong {
-  font-weight: 600;
+  color: var(--text);
+  font-weight: 400;
 }
 
 
 /* =========================
-   Lab Link
+   System Security Lab
    ========================= */
 
 .lab-link {
   display: inline-block;
-  margin-top: 4px;
+
+  margin-top: 0.5rem;
+
+  color: var(--text-secondary);
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 300;
+
   text-decoration: none;
-  opacity: 0.65;
-  transition: opacity 0.2s ease;
+
+  border-bottom: 1px solid transparent;
+
+  transition: all 0.2s ease;
 }
 
 .lab-link:hover {
-  opacity: 1;
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+
+/* =========================
+   Social Links
+   ========================= */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+
+  margin-top: 2.5rem;
 }
 
 
@@ -467,18 +499,22 @@ nav {
    Mobile
    ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   .about {
-    margin: 10px 20px 60px;
-    padding: 24px 22px;
+    max-width: 90%;
+    margin-top: 2rem;
   }
 
   .about p {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     line-height: 1.7;
   }
 
+  .social-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
 }
-
-
